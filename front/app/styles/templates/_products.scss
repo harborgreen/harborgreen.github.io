@@ -1,0 +1,11 @@
+#products {
+  .image-padder {
+    background: {
+      image: url('/images/spring2.jpg');
+      size: cover;
+    }
+  }
+  .products-content {
+    padding-top: 25px;
+  }
+}

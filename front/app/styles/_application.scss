@@ -1,5 +1,6 @@
 @import "templates/index";
 @import "templates/about";
+@import "templates/products";
 
 #header {
   text-transform: capitalize;
@@ -11,3 +12,18 @@ main {
   @include justify-content(space-between);
 }
 
+.image-padder {
+  @include display-flex;
+  @include flex-direction(column);
+  @include justify-content(flex-end);
+  height: 250px;
+}
+.page-title {
+  font-size: 24px;
+  margin-bottom: -15px;
+  padding-bottom: 5px;
+  text-align: right;
+  color: #fff;
+  @include text-shadow(rgba(#000, 0.4) 2px 2px 2px);
+  text-transform: capitalize;
+}
