@@ -1,0 +1,12 @@
+@import "templates/index";
+
+#header {
+  text-transform: capitalize;
+}
+
+main {
+  @include display-flex;
+  @include flex-direction(column);
+  @include justify-content(space-between);
+}
+

@@ -1,0 +1,42 @@
+main
+  #header
+    == outlet "header"
+    md-navbar name="ML Recycling"
+      li: link-to "about"
+        span.link-title about our company
+      li: link-to "products"
+        span.link-title our products
+      li: link-to "careers"
+        span.link-title careers at ML
+      li: link-to "contact"
+        span.link-title get in touch
+
+  #content
+    == outlet
+
+  #footer
+    footer.page-footer
+      .container
+        .row
+          .col.l8.s12
+            h5 ML Recycling
+            p stuff
+          .col.l4.s12
+            h5 links
+            ul
+              li: link-to "index"
+                span.link-title home
+              li: link-to "about"
+                span.link-title about our company
+              li: link-to "products"
+                span.link-title our products
+              li: link-to "careers"
+                span.link-title careers at ML
+              li: link-to "contact"
+                span.link-title get in touch
+
+      md-copyright text="ML Recycling" startYear=2007
+
+
+
+md-modal-container
