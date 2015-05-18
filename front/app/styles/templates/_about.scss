@@ -1,0 +1,40 @@
+#about {
+  .image-padder {
+    @include display-flex;
+    @include flex-direction(column);
+    @include justify-content(flex-end);
+    height: 250px;
+    background: {
+      image: url('/images/autumn.jpg');
+      size: cover;
+    }
+  }
+  .page-title {
+    font-size: 24px;
+    margin-bottom: -15px;
+    padding-bottom: 5px;
+    text-align: right;
+    color: #fff;
+    @include text-shadow(rgba(#000, 0.4) 2px 2px 2px);
+    text-transform: capitalize;
+  }
+  .about-content {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .section-title {
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #bdbdbd;
+  }
+  .exposition {
+    margin-top: 10px;
+  }
+  .thumbnail {
+    height: 150px;
+    border: 1px solid #bdbdbd;
+    @include box-shadow(rgba(#000, 0.5) 0 0 2px);
+  }
+}
