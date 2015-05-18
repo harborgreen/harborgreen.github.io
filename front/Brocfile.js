@@ -6,6 +6,14 @@ var app = new EmberApp({
   wrapInEval: false,
   fingerprint: {
     extensions: ["js", "css"]
+  },
+  sassOptions: {
+    includePaths: [
+      'bower_components/materialize/sass',
+      'node_modules/sass-flex-mixin',
+      'node_modules/compass-mixins/lib',
+      'bower_components/sass-toolkit/stylesheets'
+    ]
   }
 });
 

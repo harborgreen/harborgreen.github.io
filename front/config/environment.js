@@ -6,6 +6,15 @@ module.exports = function(environment) {
     environment: environment,
     baseURL: '/',
     locationType: 'auto',
+    contentSecurityPolicy: { 
+      'connect-src': "'self' 'unsafe-eval' 'unsafe-inline' *",
+      "img-src": "'self' 'unsafe-eval' 'unsafe-inline' *",
+      "media-src":  "'self' 'unsafe-eval' 'unsafe-inline' *",
+      "font-src":  "'self' 'unsafe-eval' 'unsafe-inline' *",
+      "style-src":  "'self' 'unsafe-eval' 'unsafe-inline' *",
+      "script-src":  "'self' 'unsafe-eval' 'unsafe-inline' *",
+      "frame-src": "'self' 'unsafe-eval' 'unsafe-inline' *"
+    },
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
@@ -16,14 +25,6 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
-    },
-    sassOptions: {
-      includePaths: [
-        'bower_components/materialize/sass',
-        'node_modules/sass-flex-mixin',
-        'node_modules/compass-mixins/lib',
-        'bower_components/sass-toolkit/stylesheets'
-      ]
     }
   };
 

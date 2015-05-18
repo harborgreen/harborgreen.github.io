@@ -1,0 +1,13 @@
+h6.location remote/anywhere
+h3.position-title sales associate
+.divider
+p.exposition some exposition
+p.bold-section required experience
+ul.requirements
+  li 5 years of experience
+  li 10 years of training
+p.bold-section preferred experience
+ul.requirements
+  li infinite years of experience
+.action
+  h4.how-to-apply how to apply

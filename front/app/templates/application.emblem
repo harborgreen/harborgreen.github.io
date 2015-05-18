@@ -1,7 +1,7 @@
 main
   #header
     == outlet "header"
-    md-navbar name="ML Recycling"
+    md-navbar name="ML Recycling" classNames="cloudy z-depth-2"
       li: link-to "about"
         span.link-title about our company
       li: link-to "products"
@@ -35,8 +35,6 @@ main
               li: link-to "contact"
                 span.link-title get in touch
 
-      md-copyright text="ML Recycling" startYear=2007
-
-
+      md-copyright text="ML Recycling" startYear=2008
 
 md-modal-container

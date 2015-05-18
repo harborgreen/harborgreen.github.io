@@ -1,0 +1,31 @@
+#careers
+  .image-padder
+    .container
+      .row
+        .col.s12
+          .page-title your career at ML Recycling
+  .careers-content
+    .container
+      .row
+        .col-xs-12
+          md-tabs selected=selectedTabId class="tabs-divider"
+            md-tab value="team" title="Our Team"
+            md-tab value="jobs" title="Open Positions"
+
+      if selectedTeam
+        .row
+          .col-xs-12
+            h4.page-bs stuff about our team
+            .divider
+            p.exposition Our team is composed of dedicated professionals who are committed to protecting the environment while providing our customers with excellent service. Our agents are located across the nation close to several of the largest shipping hubs to allow for swift and convenient transport at a moment’s notice. Their work goes far beyond contact with only principal recyclers, reaching out to the industrial, agricultural, and other commercial interests that might otherwise find no outlet for the plastic waste byproducts produced.
+      else
+        .row
+          .col.l9.s12
+            == outlet
+
+          .col.l3.hide-on-small-and-down
+             md-card-collapsible
+              md-collapsible title="sales associate"
+                span.opt-expo remote position for a sales agent
+              md-collapsible title="purchase associate"
+                span.opt-expo remote position for a purchase agent

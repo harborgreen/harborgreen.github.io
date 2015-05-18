@@ -12,7 +12,9 @@ Router.map ->
   @route "about"
 
   @resource "careers", path: "/careers", ->
-    @resource "job", path: "/job/:jobId", ->
+    @route "team"
+    @resource "careers.job", path: "/job/:jobId", ->
+
 
   @route "contact"
 
