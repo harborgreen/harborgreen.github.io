@@ -13,7 +13,8 @@
     "loader.js": "ember-cli/loader.js#3.2.0",
     "qunit": "~1.17.1",
     "materialize": "~0.96.0",
-    "sass-toolkit": "~2.9.0"
+    "sass-toolkit": "~2.9.0",
+    "js-yaml": "~3.3.1"
   },
   "resolutions": {
     "jquery": "^1.11.1"

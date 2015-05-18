@@ -1,13 +1,14 @@
-h6.location remote/anywhere
-h3.position-title sales associate
-.divider
-p.exposition some exposition
-p.bold-section required experience
+.job-description= model.explanation
+.bold-section required experience
 ul.requirements
-  li 5 years of experience
-  li 10 years of training
-p.bold-section preferred experience
+  each model.requirements as |req|
+    li= req
+.bold-section preferred experience
 ul.requirements
-  li infinite years of experience
-.action
-  h4.how-to-apply how to apply
+  each model.preferences as |pref|
+    li= pref
+.bold-section how to apply
+.instructions 
+  span Send a copy of your resume and cover letter to 
+  a href="mailto:mlresources.inc@gmail.com"
+    span mlresources.inc@gmail.com
