@@ -6,22 +6,11 @@
           .page-title about ML Recycling
   .about-content
     .container
-      .row
-        .col.s12
-          h4.section-title our company
-          p.exposition ML Recycling is a company established in 2008 to serve the growing needs of the Los Angeles Basin recycling community. Our business primarily facilitates the reclamation and recycling of post-industrial and post-consumer plastics through export to processing facilities overseas.
-          .center-align
-            img.thumbnail src="images/fpico.jpg"
-      .row
-        .col.s12
-          h4.section-title company statement
-          p.exposition ML Recycling’s mission is to help protect and conserve the environment by maximizing the rate of recovery of post-industrial and post-consumer plastics. We strive to deliver efficient, honest service to our local customers, while maintaining strong international relations. The ultimate goal is to reduce the environmental impact of plastics usage across the United States while earning our profits distributing the reclaimed materials to end-user processing facilities.
-          .center-align
-            img.thumbnail src="images/fpico.jpg"
-      .row
-        .col.s12
-          h4.section-title our mission
-          p.exposition ML Recycling recycles plastic by gathering reclaimed and packaged scrap for export overseas.
-          p.expositionIn turn, these plastics are cleaned, processed, and remade into many of the items one may find in their own household, car, or place of business. This process helps to reduce the impact of further resin refinement and production, lowering the carbon footprint on our planet. By reaching out to businesses and individuals currently outside the mainstream recycling industry, we are steadily lowering the rate of reusable materials that would otherwise wind up in landfills as waste.
-          .center-align
-            img.thumbnail src="images/fpico.jpg"
+      each model as |about|
+        .row
+          .col.s12
+            h4.section-title= about.title
+            each about.paragraphs as |exposition|
+              p.exposition= exposition
+            .center-align
+              img.thumbnail src=about.pic
