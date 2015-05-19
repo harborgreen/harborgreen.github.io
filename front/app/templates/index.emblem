@@ -9,15 +9,9 @@
   .followup
     .container
       .row
-        .col.l4.s12
-          md-card class="small" image="images/fpico.jpg" title="suggestion 1"
-            md-card-content
-              span.exposition details
-        .col.l4.s12
-          md-card class="small" image="images/fpico.jpg" title="suggestion 1"
-            md-card-content
-              span.exposition details
-        .col.l4.s12
-          md-card class="small" image="images/fpico.jpg" title="suggestion 1"
-            md-card-content
-              span.exposition details
+        each model as |banner|
+          .col.l4.s12
+            md-card class="small" image=banner.pic title=banner.promoHeader
+              md-card-content
+                span.exposition= banner.exposition
+        
