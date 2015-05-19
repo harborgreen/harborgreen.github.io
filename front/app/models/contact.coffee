@@ -1,4 +1,3 @@
-`import CPM from 'ember-cpm'`
 `import DS from 'ember-data'`
 
 Contact = DS.Model.extend

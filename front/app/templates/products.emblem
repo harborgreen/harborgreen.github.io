@@ -7,38 +7,15 @@
   .products-content
     .container
       .row
-        .col.l3.hide-on-small-and-down
+        .col.l3.m12.s12
           md-card-collapsible
-            md-collapsible title="all" active=true
+            actionable-collapsible payload="all" title="all" active=showAll action="selectTab"
               span.opt-expo see all the products we buy and sell
-            md-collapsible title="what we sell"
+            actionable-collapsible payload="sale" title="what we sell" action="selectTab"
               span.opt-expo we sell all our product in bulk, if you are a bulk purchaser, please contact us
-            md-collapsible title="what we buy"
+            actionable-collapsible payload="purchase" title="what we buy" action="selectTab"
               span.opt-expo we buy all of our materials in bulk, if you have large amounts of material for sale, please let us know
-        .col.l9.s12
+        .col.l9.m12.s12
           .row
-            .col.l4.m6.s12
-              md-card class="small" title="some material" image="images/doge.jpg" activator=true
-                md-card-content
-                  span.summary some summary of this material
-                md-card-reveal
-                  span.exposition some detail exposition of this thing
-
-            .col.l4.m6.s12
-              md-card class="small" title="some material" image="images/doge.jpg" activator=true
-                md-card-content
-                  span.summary some summary of this material
-                md-card-reveal
-                  span.exposition some detail exposition of this thing
-            .col.l4.m6.s12
-              md-card class="small" title="some material" image="images/doge.jpg" activator=true
-                md-card-content
-                  span.summary some summary of this material
-                md-card-reveal
-                  span.exposition some detail exposition of this thing
-            .col.l4.m6.s12
-              md-card class="small" title="some material" image="images/doge.jpg" activator=true
-                md-card-content
-                  span.summary some summary of this material
-                md-card-reveal
-                  span.exposition some detail exposition of this thing
+            each products as |product|
+              == render "products/product" product

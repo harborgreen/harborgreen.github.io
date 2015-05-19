@@ -14,6 +14,14 @@ nav.cloudy {
   }
 }
 
+.collapsible-header {
+  font-size: 20px;
+  text-transform: capitalize;
+  &.active {
+    font-weight: bold;
+  }
+}
+
 main {
   @include display-flex;
   @include flex-direction(column);
