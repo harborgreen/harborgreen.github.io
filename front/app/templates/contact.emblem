@@ -9,11 +9,12 @@
       .col.l6.s12.details
         dl.expositions
           dt email
-          dd email@example.co
+          dd= model.email
           dt phone
-          dd 555 123 4567
+          dd= model.phone
           dt address
-          dd 1234 fake street
+          dd= model.address
 
       .col.l6.hidden-on-small-and-down.maps
-        google-map lat=lat lng=lng type=mapType zoom=zoom markers=markers
+        if marker
+          google-map lat=lat lng=lng type=mapType zoom=zoom markers=markers

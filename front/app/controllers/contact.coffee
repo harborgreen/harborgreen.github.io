@@ -1,14 +1,16 @@
 `import Ember from 'ember'`
 
 ContactController = Ember.Controller.extend
-  lat: 33.7978494
-  lng: -118.1790263
-  zoom: 11
+  lat: Ember.computed.alias "model.lat"
+  lng: Ember.computed.alias "model.lng"
+  zoom: Ember.computed.alias "model.zoom"
   mapType: "road"
-  marker:
+  marker: Ember.computed "lat", "lng", ->
+    return if Ember.isBlank @get "lat"
+    return if Ember.isBlank @get "lng"
     title: "Our Office"
-    lat: 33.7978494
-    lng: -118.1790263
+    lat: @get "lat"
+    lng: @get "lng"
   markers: Ember.computed.collect "marker"
 
 
