@@ -49,7 +49,8 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-
+    ENV.baseURL = "/mlrecycle";
+    ENV.locationType = "hash";
   }
 
   return ENV;
