@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'front',
+    modulePrefix: 'mlrecycling',
     environment: environment,
     baseURL: '/',
     locationType: 'auto',
@@ -49,7 +49,6 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-    ENV.baseURL = "/mlrecycle";
     ENV.locationType = "hash";
   }
 
