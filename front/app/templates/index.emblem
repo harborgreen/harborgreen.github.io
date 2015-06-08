@@ -2,9 +2,14 @@
   .hero
     .container
       .row
-        .col.s12
+        .col.s3.m2.l1
+          h1.site-title
+            img.logo-image src="images/recycle.png"
+        .col.s9.m10.l11
           h1.site-title ML Recycling
-          h2.site-catchphrase Some catchphrase here
+      .row
+        .col.s12
+          h2.site-catchphrase Recycling our way to a greener future
 
   .followup
     .container
