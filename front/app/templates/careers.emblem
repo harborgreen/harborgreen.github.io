@@ -15,14 +15,14 @@
       if selectedTeam
         .row
           .col-xs-12
-            h4.page-bs stuff about our team
+            h4.page-bs Our team
             .divider
             p.exposition Our team is composed of dedicated professionals who are committed to protecting the environment while providing our customers with excellent service. Our agents are located across the nation close to several of the largest shipping hubs to allow for swift and convenient transport at a moment’s notice. Their work goes far beyond contact with only principal recyclers, reaching out to the industrial, agricultural, and other commercial interests that might otherwise find no outlet for the plastic waste byproducts produced.
       else
         .row
           .col.s12
             h4.page-bs we have positions open
-            p.exposition some junk about the benefits
+
         .row
           .col.s12
              md-card-collapsible
