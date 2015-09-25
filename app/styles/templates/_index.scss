@@ -1,0 +1,57 @@
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+#index {
+  background: {
+    color: color("brown", "lighten-4");
+  }
+  .site-title {
+    font-size: 3rem;
+    margin-top: 0;
+    text-transform: capitalize;
+    font-family: 'Poiret One', cursive;
+  }
+  .site-title,
+  .subtitle {
+    @include text-shadow(rgba(#212121, 0.5) 2px 2px 3px);
+    color: color("green", "lighten-3");
+  }
+  .subtitle {
+    text-transform: uppercase;
+  }
+  .hero {
+    min-height: 550px;
+    background: {
+      image: url('images/hand.png');
+      size: cover;
+      position: center center;
+    }
+    margin-bottom: -20px;
+  }
+  .logo {
+    padding-top: 1rem;
+    background-color: rgba(color("grey", "darken-4"), 0.4);
+    margin-top: 2rem;
+    img {
+      width: 10rem;
+    }
+  }
+  .slogan {
+    text-align: center;
+    margin-top: 4rem;
+    color: color("green", "lighten-1");
+    font-family: 'Poiret One', cursive;
+  }
+  .underline {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid color("green", "darken-1");
+  }
+  .catchphrase {
+    margin-bottom: 1rem;
+    margin-top: 4rem;
+    text-align: center;
+    color: color("grey", "darken-3");
+  }
+  .center {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}

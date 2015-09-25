@@ -1,0 +1,37 @@
+#index
+  .hero
+    .container
+      .row
+        .col.s12.m6.l4
+          .logo.z-depth-2
+            img src="assets/images/just-logo.png"
+            h4.site-title harbor green group
+            h6.subtitle
+              span.fa resources development holding. inc.
+
+  site-nav name="Home" navClass="green darken-1"
+
+  .followup
+    .container
+      .row
+        .col.s12
+          h3.slogan 
+            span.underline A Greener Future is in Our Hands
+          h5.catchphrase We are the industry leading diversified international investment management firm dedicated to environmental responsibility
+      
+      .row
+        each model as |banner|
+          .col.l4.s12
+            md-card image=banner.pic title=banner.promoHeader titleClass="red-text darken-3"
+              md-card-content
+                span.exposition= banner.exposition
+              md-card-action
+                link-to banner.target
+                  span.fa discover more
+
+      .row
+        .col.s12
+          .center
+            link-to "companies.index" class="btn-large red darken-2"
+              span.fa see our other companies&nbsp;
+              i.fa.fa-caret-right

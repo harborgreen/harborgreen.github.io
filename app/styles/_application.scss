@@ -1,0 +1,72 @@
+@import "templates/index";
+@import "templates/about";
+@import "templates/products";
+@import "templates/careers";
+@import "templates/contact";
+
+#header {
+  text-transform: capitalize;
+}
+
+nav.cloudy {
+  background: {
+    color: color("blue-grey", "darken-1");
+  }
+}
+
+.collapsible-header {
+  font-size: 20px;
+  text-transform: capitalize;
+  &.active {
+    font-weight: bold;
+  }
+}
+
+main {
+  @include display-flex;
+  @include flex-direction(column);
+  @include justify-content(space-between);
+}
+
+.image-padder {
+  @include display-flex;
+  @include flex-direction(column);
+  @include justify-content(flex-end);
+  height: 250px;
+}
+.page-title {
+  font-size: 24px;
+  margin-bottom: -15px;
+  padding-bottom: 5px;
+  text-align: right;
+  color: #fff;
+  @include text-shadow(rgba(#000, 0.4) 2px 2px 2px);
+  text-transform: capitalize;
+}
+
+.row.final {
+  margin-bottom: 0;
+}
+
+footer.page-footer {
+  margin-top: 0;
+  background: {
+    color: color('green', 'darken-4');
+  }
+  h5 {
+    color: color("grey", "lighten-3");
+  }
+  p {
+    color: color("grey", "lighten-1"); 
+  }
+  a {
+    color: color("grey", "lighten-2");  
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+#content {
+  margin-bottom: -1.25rem;
+}
