@@ -18,6 +18,18 @@ Riverstar =
   email: "jackson@riverstar.co"
   phone: "555-555-5555"
 
-contacts = Ember.A [Main, Riverstar]
+Ameco =
+  id: "ameco-1"
+  companyId: "ameco"
+  contactName: "Fred Smith"
+  businessName: "Ameco"
+  phone: "702-767-1707"
+  fax: "702-974-0240"
+
+contacts = [
+  Main, 
+  Riverstar,
+  Ameco
+]
 
 `export default contacts`

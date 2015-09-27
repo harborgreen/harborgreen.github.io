@@ -3,4 +3,4 @@
     material-tiles-collection tiles=model as |tile|
       material-tile-link "companies.company" tile.id background=tile.pic
         .tile-title= tile.title
-        .tile-subtitle= tile.state
+        .tile-subtitle= tile.address
