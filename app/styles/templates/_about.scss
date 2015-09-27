@@ -6,7 +6,7 @@
     background: {
       image: url('images/california.jpg');
       size: cover;
-      position: left center;
+      position: left top;
     }
   }
   .about-content {
@@ -19,13 +19,26 @@
     padding-bottom: 20px;
     margin-bottom: 15px;
     border-bottom: 1px solid #bdbdbd;
+    color: color("blue-grey", "darken-3");
+    font-family: 'Poiret One', cursive;
   }
   .exposition {
     margin-top: 10px;
+    font-family: "FontAwesome", normal;
   }
-  .thumbnail {
-    height: 150px;
+  .tile {
+    width: 100%;
     border: 1px solid #bdbdbd;
     @include box-shadow(rgba(#000, 0.5) 0 0 2px);
+  }
+  .about-second-hero {
+    @include display-flex;
+    @include align-items(center);
+    height: 350px;
+    background: {
+      image: url('images/california.jpg');
+      size: cover;
+      position: right bottom;
+    }
   }
 }

@@ -8,9 +8,16 @@
     .container
       each model as |about|
         .row
-          .col.s12
+          .col.s12.m6.l6
             h4.section-title= about.title
             each about.paragraphs as |exposition|
               p.exposition= exposition
-            .center-align
-              img.thumbnail src=about.pic
+          .col.m6.l6.hide-on-small-only
+            img.tile src=about.pic
+  .about-second-hero
+    .container
+      .row.final
+        .col.s12.center
+          link-to "companies.index" class="btn-large waves-effect amber darken-3"
+            span.fa visit our portfolio&nbsp;
+            i.fa.fa-angle-down
