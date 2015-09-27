@@ -1,6 +1,0 @@
-.col.l6.m6.s12
-  md-card class="medium" title=model.materialName image=model.pic activator=true
-    md-card-content
-      span.summary= model.summary
-    md-card-reveal
-      span.exposition= model.exposition

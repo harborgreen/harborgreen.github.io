@@ -1,18 +1,10 @@
 @import "templates/index";
 @import "templates/about";
-@import "templates/products";
-@import "templates/careers";
 @import "templates/contact";
+@import "templates/companies";
 
-#header {
-  text-transform: capitalize;
-}
-
-nav.cloudy {
-  background: {
-    color: color("blue-grey", "darken-1");
-  }
-}
+@import "components/site-footer";
+@import "components/site-nav";
 
 .collapsible-header {
   font-size: 20px;
@@ -46,25 +38,6 @@ main {
 
 .row.final {
   margin-bottom: 0;
-}
-
-footer.page-footer {
-  margin-top: 0;
-  background: {
-    color: color('green', 'darken-4');
-  }
-  h5 {
-    color: color("grey", "lighten-3");
-  }
-  p {
-    color: color("grey", "lighten-1"); 
-  }
-  a {
-    color: color("grey", "lighten-2");  
-  }
-  a:hover {
-    text-decoration: underline;
-  }
 }
 
 #content {

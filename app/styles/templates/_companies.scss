@@ -1,0 +1,31 @@
+#companies {
+  background: {
+    color: color("blue-grey", "lighten-5");
+  }
+  .collapsible-body {
+    background: {
+      color: #fff;
+    }
+  }
+  .image-padder {
+    background: {
+      image: url('images/city.jpg');
+      size: cover;
+      position: center top;
+    }
+  }
+  .companies-second-hero {
+    @include display-flex;
+    @include align-items(center);
+    height: 350px;
+    background: {
+      image: url('images/city.jpg');
+      size: cover;
+      position: center bottom;
+    } 
+  }
+  .companies-content {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}

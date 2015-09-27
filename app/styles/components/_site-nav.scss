@@ -1,0 +1,9 @@
+nav {
+  text-transform: capitalize;
+}
+
+nav.cloudy {
+  background: {
+    color: color("blue-grey", "darken-1");
+  }
+}

@@ -1,9 +1,10 @@
+site-nav navClass="cyan darken-1" name="Harbor Green Group"
 #about
   .image-padder
     .container
       .row
         .col.s12
-          .page-title about ML Recycling
+          .page-title about Harbor Green Group
   .about-content
     .container
       each model as |about|

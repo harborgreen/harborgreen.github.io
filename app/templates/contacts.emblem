@@ -1,0 +1,30 @@
+site-nav name="Harbor Green Group" navClass="indigo darken-2"
+#contact
+  .image-padder
+    .container
+      .row
+        .col.s12
+          .page-title get in touch
+  .contact-content
+    .row.final
+      .col.l6.s12.details
+        h4.page-subtitle 
+          span.fa Main Office Contact
+        dl.expositions
+          dt email
+          dd= mainContact.email
+          dt phone
+          dd= mainContact.phone
+          dt address
+          dd= mainContact.address
+
+      .col.l6.hidden-on-small-and-down.maps
+        if marker
+          google-map lat=lat lng=lng type=mapType zoom=zoom markers=markers
+  .contact-second-hero
+    .container
+      .row.final
+        .col.s12.center
+          link-to "companies" class="btn-large waves-effect purple"
+            span.fa Portfolio Company Contacts&nbsp;
+            i.fa.fa-angle-up

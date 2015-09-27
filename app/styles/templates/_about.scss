@@ -1,8 +1,12 @@
 #about {
+  background: {
+    color: color("amber", "lighten-5");
+  }
   .image-padder {
     background: {
-      image: url('/images/autumn.jpg');
+      image: url('images/california.jpg');
       size: cover;
+      position: left center;
     }
   }
   .about-content {

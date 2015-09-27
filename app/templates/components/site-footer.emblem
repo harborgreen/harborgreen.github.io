@@ -1,0 +1,18 @@
+footer.page-footer
+  .container
+    .row
+      .col.l8.s12
+        h5 Harbor Green Group
+        p recycling our way to a greener future
+      .col.l4.s12
+        h5 links
+        ul
+          li: link-to "index"
+            span.link-title home
+          li: link-to "about"
+            span.link-title about our company
+          li: link-to "companies"
+            span.link-title our portfolio
+          li: link-to "contacts"
+            span.link-title get in touch
+    md-copyright text="Harbor Green Group" startYear=2006

@@ -26,12 +26,14 @@
               md-card-content
                 span.exposition= banner.exposition
               md-card-action
-                link-to banner.target
+                link-to "companies.company" banner.id
                   span.fa discover more
 
+  .second-hero
+    .container
       .row
         .col.s12
           .center
             link-to "companies.index" class="btn-large red darken-2"
-              span.fa see our other companies&nbsp;
-              i.fa.fa-caret-right
+              span.fa all our portfolio companies&nbsp;
+              i.fa.fa-angle-down

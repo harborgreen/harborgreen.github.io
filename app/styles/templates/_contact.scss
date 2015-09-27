@@ -1,15 +1,31 @@
 #contact {
+  background: {
+    color: color("yellow", "lighten-5");
+  }
   .image-padder {
     background: {
-      image: url('/images/spring2.jpg');
+      image: url('images/spring2.jpg');
+      size: cover;
+      position: center top;
+    }
+  }
+  .contact-second-hero {
+    @include display-flex;
+    @include align-items(center);
+    height: 350px;
+    background: {
+      image: url('images/spring2.jpg');
       size: cover;
       position: center bottom;
-    }
+    } 
   }
   .map-canvas,
   .details,
   .maps {
     height: 550px;
+  }
+  .maps.col {
+    padding-right: 0;
   }
   .section-title {
     font-size: 22px;

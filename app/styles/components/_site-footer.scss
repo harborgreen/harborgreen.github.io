@@ -1,0 +1,19 @@
+footer.page-footer {
+  margin-top: 0;
+  padding-top: 5rem;
+  background: {
+    color: color('grey', 'darken-4');
+  }
+  h5 {
+    color: color("grey", "lighten-3");
+  }
+  p {
+    color: color("grey", "lighten-1"); 
+  }
+  a {
+    color: color("grey", "lighten-2");  
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}

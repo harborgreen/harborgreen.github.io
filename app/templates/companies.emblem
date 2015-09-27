@@ -1,0 +1,16 @@
+site-nav navClass="light-blue darken-1" name="Harbor Green Group"
+#companies
+  .image-padder
+    .container
+      .row
+        .col.s12
+          .page-title.yellow-text.lighten-2 Portfolio Companies
+  .companies-content
+    == liquid-outlet
+  .companies-second-hero
+    .container
+      .row.final
+        .col.s12.center
+          link-to "contacts" class="btn-large waves-effect blue-grey"
+            span.fa Main Company Contact&nbsp;
+            i.fa.fa-angle-down

@@ -2,18 +2,9 @@ md-navbar name=name class=navClass
   link-to "about" tagName="li"
     link-to "about"
       span.link-title about us
-  link-to "companies.grain" tagName="li"
-    link-to "companies.grain"
-      span.link-title harbor grain
-  link-to "companies.transload" tagName="li"
-    link-to "companies.transload"
-      span.link-title gateway transload
-  link-to "companies.trade" tagName="li"
-    link-to "companies.trade"
-      span.link-title riverstar trade
-  link-to "careers" tagName="li"
-    link-to "careers"
-      span.link-title careers
-  link-to "contact" tagName="li"
-    link-to "contact"
+  link-to "companies.index" tagName="li"
+    link-to "companies.index"
+      span.link-title our companies
+  link-to "contacts" tagName="li"
+    link-to "contacts"
       span.link-title contact

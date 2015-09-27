@@ -20,11 +20,25 @@
   .hero {
     min-height: 550px;
     background: {
-      image: url('images/hand.png');
-      size: cover;
+      image: url('images/hand.jpg');
+      size: contain;
       position: center center;
+      color: #131313;
+      repeat: no-repeat;
     }
     margin-bottom: -20px;
+  }
+  .second-hero {
+    @include display-flex;
+    @include align-items(center);
+    margin-top: 3rem;
+    height: 450px;
+    background: {
+      image: url('images/earth.png');
+      size: cover;
+      position: center center;
+      repeat: no-repeat;
+    }
   }
   .logo {
     padding-top: 1rem;
@@ -39,6 +53,7 @@
     margin-top: 4rem;
     color: color("green", "lighten-1");
     font-family: 'Poiret One', cursive;
+    @include text-shadow(rgba(color("brown", "darken-4"), 0.5) 0 0.5px 1px);
   }
   .underline {
     padding-bottom: 1rem;
