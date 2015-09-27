@@ -1,4 +1,3 @@
-site-nav name="Harbor Green Group" navClass="indigo darken-2"
 #contact
   .image-padder
     .container
@@ -9,7 +8,7 @@ site-nav name="Harbor Green Group" navClass="indigo darken-2"
     .row.final
       .col.l6.s12.details
         h4.page-subtitle 
-          span.fa Main Office Contact
+          span.fa.underline Main Office Contact
         dl.expositions
           dt email
           dd= mainContact.email

@@ -8,8 +8,8 @@
             h4.site-title harbor green group
             h6.subtitle
               span.fa resources development holding. inc.
-
-  site-nav name="Home" navClass="green darken-1"
+  .hide-on-small-and-down
+    site-nav name="Home" navClass="green darken-1"
 
   .followup
     .container
@@ -28,12 +28,11 @@
               md-card-action
                 link-to "companies.company" banner.id
                   span.fa discover more
-
   .second-hero
     .container
       .row
         .col.s12
           .center
             link-to "companies.index" class="btn-large red darken-2"
-              span.fa all our portfolio companies&nbsp;
+              span.fa our portfolio companies&nbsp;
               i.fa.fa-angle-down

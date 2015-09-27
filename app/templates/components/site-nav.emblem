@@ -1,4 +1,8 @@
 md-navbar name=name class=navClass
+  .hide-on-med-and-up
+    link-to "index" tagName="li"
+      link-to "index"
+        span.link-title Home
   link-to "about" tagName="li"
     link-to "about"
       span.link-title about us
