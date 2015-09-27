@@ -1,7 +1,7 @@
 {
   "name": "harbor",
-  "version": "0.0.0",
-  "description": "front end of ML Recycling webpage",
+  "version": "0.1.0",
+  "description": "front end of harbor group webpage",
   "private": true,
   "directories": {
     "doc": "doc",
