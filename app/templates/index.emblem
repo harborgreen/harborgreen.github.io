@@ -28,6 +28,9 @@
               md-card-action
                 link-to "companies.company" banner.id
                   span.fa discover more
+                if banner.siteLink
+                  a href=banner.siteLink target="blank"
+                    span.fa visit site
   .second-hero
     .container
       .row

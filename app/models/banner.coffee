@@ -5,6 +5,7 @@ Banner = DS.Model.extend
   promoHeader: DS.attr "string"
   pic: DS.attr "string"
   exposition: DS.attr "string"
+  siteLink: DS.attr "string"
 
 Banner.reopenClass FIXTURES: Banners
 

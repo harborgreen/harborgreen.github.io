@@ -14,6 +14,8 @@
           dd= mainContact.email
           dt phone
           dd= mainContact.phone
+          dt fax
+          dd= mainContact.fax
           dt address
           dd= mainContact.address
 

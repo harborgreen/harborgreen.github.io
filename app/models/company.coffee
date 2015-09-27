@@ -6,7 +6,8 @@ Company = DS.Model.extend
   state: DS.attr "string"
   pic: DS.attr "string"
   address: DS.attr "string"
-
+  siteLink: DS.attr "string"
+  
   contacts: DS.hasMany "contact", async: true
 
 Company.reopenClass FIXTURES: Companies

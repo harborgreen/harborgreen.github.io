@@ -3,6 +3,7 @@ Grain =
   pic: "assets/images/grain.png"
   promoHeader: "Harbor Green Grain"
   exposition: "Our flagship company in the grass, grain, and produce market"
+  siteLink: "http://harborgreengrain.com"
 Gateway =
   id: "transload"
   pic: "assets/images/warehouse.jpg"
