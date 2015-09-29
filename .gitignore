@@ -2,6 +2,7 @@
 
 # compiled output
 /dist
+/selenium-dist
 /tmp
 
 # dependencies

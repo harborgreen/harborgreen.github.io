@@ -13,7 +13,23 @@ module.exports =
   works: "insideProject"
   availableOptions: [EnvOpt]
 
-  run: ->
+  run: (options, rawArgs) ->
+    ui = @ui
+    root = @project.root
+    execOptions = 
+      cwd: root
+
+    runCmd("git checkout master", execOptions)
+    .then ->
+      runCmd("cp -Rf dist/* .", execOptions)
+    .then ->
+      runCmd("git add . --all && git commit -m 'auto commit from nojs build'", execOptions)
+    .then ->
+      runCommand("git checkout `git reflog HEAD | sed -n " +
+        "'/checkout/ !d; s/.* \\(\\S*\\)$/\\1/;p' | sed '2 !d'`", execOptions)
+    .then ->
+      ui.write "should be good to push"
+
 
 runCmd = (cmd, opts) ->
   new RSVP.Promise (resolve, reject) ->

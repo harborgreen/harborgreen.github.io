@@ -1,17 +1,18 @@
 module.exports = [
+  "/",
   "about",
-  "companies",
-  "companies/grain",
-  "companies/gateway",
-  "companies/riverstar",
-  "companies/ameco",
-  "companies/zhonghua",
-  "companies/beckett",
-  "companies/metal",
-  "companies/hnp",
-  "companies/jw",
-  "companies/lg",
-  "companies/secure",
-  "companies/viera"
+  "companies/",
+  "companies/c/grain",
+  "companies/c/gateway",
+  "companies/c/riverstar",
+  "companies/c/ameco",
+  "companies/c/zhonghua",
+  "companies/c/beckett",
+  "companies/c/metal",
+  "companies/c/hnp",
+  "companies/c/jw",
+  "companies/c/lg",
+  "companies/c/secure",
+  "companies/c/viera"
   "contacts"
 ]

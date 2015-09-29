@@ -26,7 +26,7 @@ class Machine
     @baseURI = "http://localhost:4200"
     @by = @webdriver.By
     @until = @webdriver.until
-    @writer = new Writer("dist")
+    @writer = new Writer("selenium-dist")
 
   write: (string) -> @writer.write(string)
 
@@ -47,8 +47,9 @@ class Machine
     path.normalize path.join(@baseURI, route)
 
   calculateFilename: (route) ->
-    switch route
-      when "", null, "/" then "index"
+    endsInSlash = /\/$/
+    switch
+      when endsInSlash.exec(route)? then path.join(route, "index")
       else route
 
 module.exports = Machine
