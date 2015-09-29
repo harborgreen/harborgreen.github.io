@@ -17,7 +17,7 @@
 
   .row
     .col.s12
-      md-card-collapsible accordion=false
-        each contacts as |contact|
-          md-collapsible title=contact.contactName active=true
+      each contacts as |contact|
+        md-card title=contact.contactName
+          md-card-content
             material-object-listify model=contact displayKeys=contactKeys iconMap=iconMap

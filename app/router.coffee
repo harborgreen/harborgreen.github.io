@@ -6,7 +6,7 @@ Router = Ember.Router.extend
 
 Router.map ->
   @resource "companies", path: "/companies", ->
-    @resource "companies.company", path: "/c/:id", ->
+    @resource "companies.company", path: "/:id", ->
 
   @route "about"
 
