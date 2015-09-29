@@ -1,5 +1,5 @@
 path = require("path")
-
+RSVP = require "rsvp"
 class Writer
   fs = require("fs-extra")
 
@@ -16,7 +16,8 @@ class Writer
 
 class Machine
   asyncMap = require("./async-map")
-
+  wait = (time) ->
+    new RSVP.Promise (r) -> setTimeout r, time
   @buildApp = (driver, webdriver) ->
     new Machine(driver, webdriver)
     .build()
@@ -38,6 +39,8 @@ class Machine
     .get @calculateURI route
     .then =>
       @driver.wait @until.titleMatches(/~ok$/), 1000
+    .then =>
+      wait 1500
     .then =>
       @driver.getPageSource()
     .then (source) =>
