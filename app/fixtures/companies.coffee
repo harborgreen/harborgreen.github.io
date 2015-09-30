@@ -1,7 +1,7 @@
 Grain = 
   id: "grain"
   title: "Harbor Green Grain Company"
-  pic: "assets/images/grain.png"
+  pic: "assets/images/grass.jpg"
   address: "19067 S. Reyes Ave. Compton, CA 90221"
   siteLink: "http://harborgreengrain.com"
   contacts: ["grain-1"]
@@ -17,7 +17,7 @@ Riverstar =
   id: "recycle"
   title: "Harbor Green Recycling."
   state: "Compton, CA"
-  pic: "assets/images/recycling.jpg"
+  pic: "assets/images/occ.jpg"
   address: "19530 S. Alameda St. Compton, CA 90221"
   siteLink: "http://harborgreenrecycle.com"
   contacts: ["recycle-1"]
