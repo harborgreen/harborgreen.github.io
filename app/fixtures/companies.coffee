@@ -14,12 +14,13 @@ Gateway =
   contacts: ["gateway-1"]
 
 Riverstar =
-  id: "riverstar"
+  id: "recycle"
   title: "Harbor Green Recycling."
   state: "Compton, CA"
   pic: "assets/images/recycling.jpg"
   address: "19530 S. Alameda St. Compton, CA 90221"
-  contacts: ["riverstar-1"]
+  siteLink: "http://harborgreenrecycle.com"
+  contacts: ["recycle-1"]
   
 # Ameco =
 #   id: "ameco"

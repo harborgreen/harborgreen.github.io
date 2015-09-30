@@ -29,8 +29,8 @@ Gateway =
   address: "281 W 15TH ST - 283 W  15TH  ST, San Pedro, CA 90731"
 
 Riverstar =
-  id: "riverstar-1"
-  companyId: "riverstar"
+  id: "recycle-1"
+  companyId: "recycle"
   businessName: "Harbor Green Recycling"
   contactName: "Company Frontdesk"
   phone: "310-965-0928"
