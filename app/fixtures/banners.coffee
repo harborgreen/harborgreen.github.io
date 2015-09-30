@@ -1,6 +1,6 @@
 Grain = 
   id: "grain"
-  pic: "assets/images/grass.jpg"
+  pic: "assets/images/bale.jpg"
   promoHeader: "Harbor Green Grain"
   exposition: "Our flagship company in the grass, grain, and produce market"
   siteLink: "http://harborgreengrain.com"

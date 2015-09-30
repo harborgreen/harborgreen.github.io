@@ -1,7 +1,7 @@
 Grain = 
   id: "grain"
   title: "Harbor Green Grain Company"
-  pic: "assets/images/grass.jpg"
+  pic: "assets/images/bale.jpg"
   address: "19067 S. Reyes Ave. Compton, CA 90221"
   siteLink: "http://harborgreengrain.com"
   contacts: ["grain-1"]
