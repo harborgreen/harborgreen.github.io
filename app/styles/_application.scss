@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
 @import "templates/index";
 @import "templates/about";
 @import "templates/contact";
@@ -43,4 +44,44 @@ main {
 
 #content {
   margin-bottom: -1.25rem;
+}
+
+.hero {
+  @include display-flex;
+  @include align-items(center);
+  margin-top: 3rem;
+  height: 450px;
+}
+.first-hero {
+  background: {
+    image: url('images/hand.jpg');
+    size: contain;
+    position: center center;
+    color: #131313;
+    repeat: no-repeat;
+  }
+}
+.second-hero {
+  background: {
+    image: url('images/california.jpg');
+    size: cover;
+    position: center center;
+    repeat: no-repeat;
+  }
+}
+.third-hero {
+  background: {
+    image: url('images/city.jpg');
+    size: cover;
+    position: center top;
+    repeat: no-repeat;
+  } 
+}
+.final-hero {
+  background: {
+    image: url('images/earth.png');
+    size: cover;
+    position: center center;
+    repeat: no-repeat;
+  }
 }

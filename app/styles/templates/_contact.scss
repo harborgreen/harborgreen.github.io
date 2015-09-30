@@ -1,6 +1,6 @@
 #contact {
   background: {
-    color: color("yellow", "lighten-5");
+    color: color("brown", "lighten-5");
   }
   .image-padder {
     background: {
@@ -9,18 +9,26 @@
       position: center top;
     }
   }
-  .contact-second-hero {
-    @include display-flex;
-    @include align-items(center);
-    height: 350px;
-    background: {
-      image: url('images/spring2.jpg');
-      size: cover;
-      position: center bottom;
-    } 
+  .hard-code-map {
+    width: 100%;
+    height: 100%;
+  }
+  .third-hero {
+    margin-top: 0;
   }
   .page-subtitle {
-    color: color("blue-grey", "darken-1");
+    color: color("green", "darken-4");
+    text-transform: capitalize;
+    font-size: 1.55rem;
+    font-family: 'Poiret One', cursive;
+  }
+  .subsection-title {
+    color: color("blue-grey", "darken-1"); 
+    font-size: 1.2rem;
+  }
+  .fyi-panel {
+    padding: 2rem;
+    background-color: rgba(color("blue", "lighten-2"), 0.4);
   }
   .map-canvas,
   .details,
@@ -53,6 +61,20 @@
       color: color("blue-grey", "darken-3");
       margin-bottom: 20px;
       font-size: 1.5rem;
+    }
+  }
+  .card-title {
+    font-size: 1.4rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+  }
+  .card-large {
+    height: 405px;
+    background: {
+      image: url("images/small-logo.png");
+      size: 100px 75px;
+      position: right bottom;
+      repeat: no-repeat;
     }
   }
 }

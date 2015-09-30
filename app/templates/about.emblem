@@ -18,6 +18,6 @@
     .container
       .row.final
         .col.s12.center
-          link-to "companies.index" class="btn-large waves-effect amber darken-3"
-            span.fa visit our portfolio&nbsp;
-            i.fa.fa-angle-down
+          link-to "index" class="btn-large waves-effect amber darken-3"
+            i.fa.fa-angle-left
+            span.fa &nbsp;back

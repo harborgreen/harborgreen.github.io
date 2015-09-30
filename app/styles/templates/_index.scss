@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+
 #index {
   background: {
     color: color("brown", "lighten-4");
@@ -17,28 +17,9 @@
   .subtitle {
     text-transform: uppercase;
   }
-  .hero {
+  .first-hero {
     min-height: 450px;
-    background: {
-      image: url('images/hand.jpg');
-      size: contain;
-      position: center center;
-      color: #131313;
-      repeat: no-repeat;
-    }
     margin-bottom: -20px;
-  }
-  .second-hero {
-    @include display-flex;
-    @include align-items(center);
-    margin-top: 3rem;
-    height: 450px;
-    background: {
-      image: url('images/earth.png');
-      size: cover;
-      position: center center;
-      repeat: no-repeat;
-    }
   }
   .logo {
     padding-top: 1rem;

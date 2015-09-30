@@ -1,5 +1,5 @@
 #index
-  .hero
+  .first-hero
     .container
       .row
         .col.s12.m6.l4
@@ -20,7 +20,7 @@
           h5.catchphrase We are the industry leading diversified international investment management firm dedicated to environmental responsibility
       
       .row
-        each model as |banner|
+        each banners as |banner|
           .col.l4.s12
             md-card image=banner.pic title=banner.promoHeader titleClass="red-text darken-3"
               md-card-content
@@ -31,11 +31,66 @@
                 if banner.siteLink
                   a href=banner.siteLink target="blank"
                     span.fa visit site
-  .second-hero
+
+  .second-hero.hero
     .container
       .row
         .col.s12
           .center
-            link-to "companies.index" class="btn-large red darken-2"
-              span.fa our portfolio companies&nbsp;
-              i.fa.fa-angle-down
+            link-to "about" class="btn-large red darken-2"
+              span.fa about our company&nbsp;
+              i.fa.fa-angle-right
+
+#contact
+  .followup
+    .row.final
+      .col.l6.s12.details
+        h4.page-subtitle 
+          span.fa.underline Main Office Contact
+        dl.expositions
+          dt email
+          dd= mainContact.email
+          dt phone
+          dd= mainContact.phone
+          dt fax
+          dd= mainContact.fax
+          dt address
+          dd= mainContact.address
+
+      .col.l6.hidden-on-small-and-down.maps
+        img.hard-code-map src="assets/images/location.png"
+
+    .third-hero.hero
+      .container
+        .row
+          .col.s12.m6.l4.offset-m3.offset-l4
+            .center.z-depth-1.fyi-panel
+              h4.page-subtitle
+                span.fa.underline business with us!
+              h5.subsection-title get in touch
+    .container
+      .row
+        h1
+        each contacts as |contact|
+          .col.l6.m6.s12
+            .card-panel.card-large
+              h6.card-title.underline= contact.businessName
+              material-object-listify model=contact displayKeys=contactKeys iconMap=iconMap
+
+  .final-hero.hero
+    .container
+      .row
+        .col.s12
+          .center
+            button.btn-large.red.darken-2 click="scrollBack"
+              span.fa top&nbsp;
+              i.fa.fa-angle-up
+
+if siteConFlag
+  md-modal close="closeModal"
+    .modal-content
+      h4 The Gateway Logistics site is under construction
+      p it is not available for viewing yet
+    .modal-footer
+      a.modal-action.modal-close.waves-effect.waves-orange.btn-flat.agree-button click="closeModal"
+        span.fa ok

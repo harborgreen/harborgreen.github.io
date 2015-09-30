@@ -3,12 +3,12 @@ md-navbar name=name class=navClass
     link-to "index" tagName="li"
       link-to "index"
         span.link-title Home
+  link-to "index" tagName="li"
+    link-to "index"
+      span.link-title home
   link-to "about" tagName="li"
     link-to "about"
       span.link-title about us
-  link-to "companies.index" tagName="li"
-    link-to "companies.index"
-      span.link-title our companies
-  link-to "contacts" tagName="li"
-    link-to "contacts"
-      span.link-title contact
+  link-to "companies" tagName="li"
+    link-to "companies"
+      span.link-title our portfolio

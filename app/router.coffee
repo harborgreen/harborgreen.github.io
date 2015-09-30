@@ -7,10 +7,6 @@ Router = Ember.Router.extend
 Router.map ->
   @resource "companies", path: "/companies", ->
     @resource "companies.company", path: "/:id", ->
-
   @route "about"
-
-  @resource "contacts", path: "/contacts", ->
-    @resource "contacts.contact", path: "/:id", ->
 
 `export default Router`

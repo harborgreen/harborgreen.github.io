@@ -3,13 +3,13 @@
     .container
       .row
         .col.s12
-          .page-title.yellow-text.lighten-2 Portfolio Companies
+          .page-title.yellow-text.lighten-2 Portfolio Company Details
   .companies-content
     == liquid-outlet
   .companies-second-hero
     .container
       .row.final
         .col.s12.center
-          link-to "contacts" class="btn-large waves-effect blue-grey"
-            span.fa Main Company Contact&nbsp;
-            i.fa.fa-angle-down
+          link-to "index" class="btn-large waves-effect blue-grey"
+            i.fa.fa-angle-left
+            span.fa &nbsp;back

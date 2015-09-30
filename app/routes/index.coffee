@@ -6,6 +6,9 @@ IndexRoute = Ember.Route.extend
       outlet: "header"
     @_super arguments...
   model: ->
-    @store.find "banner"
+    Ember.RSVP.hash
+      banners: @store.find "banner"
+      main: @store.find("contact", "main")
+      contacts: @store.find("contact")
 
 `export default IndexRoute`

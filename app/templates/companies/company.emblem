@@ -5,7 +5,7 @@
         i.fa.fa-angle-left
         span.fa &nbsp;#{company.title}
   .row
-    .col.s12.m6.l4
+    .col.s12.m6.l6
       .chip
         img src=company.pic
         span.fa= company.address
