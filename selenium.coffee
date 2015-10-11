@@ -5,8 +5,9 @@ Paths = [
   "about",
   "companies/",
   "companies/grain",
-  "companies/gateway",
-  "companies/recycle"
+  "companies/transload",
+  "companies/warehouse",
+  "companies/trade"
 ]
 
 module.exports = ({webdriver, chrome, firefox}) ->
