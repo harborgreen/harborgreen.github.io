@@ -8,7 +8,7 @@
             h4.site-title harbor green
             h6.subtitle
               span.fa resources development holding. inc.
-  .hide-on-small-and-down
+  .hide-on-med-and-down
     site-nav name="Home" navClass="green darken-1"
 
   .followup
