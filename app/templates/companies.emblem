@@ -3,7 +3,7 @@
     .container
       .row
         .col.s12
-          .page-title.yellow-text.lighten-2 Portfolio Company Details
+          .page-title.yellow-text.lighten-2 Company Service Details
   .companies-content
     == liquid-outlet
   .companies-second-hero

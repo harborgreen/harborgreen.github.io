@@ -11,8 +11,8 @@ Contact = DS.Model.extend
   contactName: DS.attr "string"
   businessName: DS.attr "string"
   address: DS.attr "string"
-
-  company: DS.belongsTo "company", async: true
+  locationPic: DS.attr "string"
+  banner: DS.belongsTo "banner", async: true
 
 Contact.reopenClass FIXTURES: Contacts
 `export default Contact`

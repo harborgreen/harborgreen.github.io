@@ -27,15 +27,21 @@
     font-size: 1.2rem;
   }
   .fyi-panel {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
     padding: 2rem;
-    background-color: rgba(color("blue", "lighten-2"), 0.4);
+    background-color: rgba(color("blue", "lighten-5"), 0.4);
   }
   .map-canvas,
   .details,
   .maps {
     @media #{$large-and-up} {
-      height: 550px;
+      max-height: 550px;
     }
+  }
+  .maps {
+    padding-top: 0.5rem;
+    height: 415px;
   }
   .maps.col {
     padding-right: 0;
@@ -77,4 +83,5 @@
       repeat: no-repeat;
     }
   }
+  
 }

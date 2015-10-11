@@ -11,4 +11,4 @@ md-navbar name=name class=navClass
       span.link-title about us
   link-to "companies" tagName="li"
     link-to "companies"
-      span.link-title our portfolio
+      span.link-title our services

@@ -27,10 +27,8 @@ IndexController = Ember.Controller.extend
     address: "fa fa-map-marker fa-lg"
     
   actions:
-    closeModal: ->
-      @set "siteConFlag", false
-    siteUnderConstruction: ->
-      @set "siteConFlag", true
+    externalSite: (link) ->
+      window.open link, "_blank"
     scrollBack: ->
       Ember.$ "body"
       .scrollTop 0

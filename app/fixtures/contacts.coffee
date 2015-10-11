@@ -2,111 +2,62 @@ Main =
   id: "main"
   contactName: "Harbor Green Group General Information"
   businessName: "Harbor Green Group"
-  email: "sshang@harborgreenus.com"
+  # email: "sshang@harborgreenus.com"
   phone: "310-965-0928"
   fax: "310-955-9038"
-  address: "19530 S Alameda St. Compton, CA 90221"
+  address: "19100 S. Susana Rd. Compton, CA 90221"
+  locationPic: "assets/images/location.png"
   lat: 33.853834
   lng: -118.216673
   zoom: 14
 
 Grain =
   id: "grain-1"
-  companyId: "grain"
+  bannerId: "grain"
   businessName: "Harbor Green Grain"
   contactName: "Company Frontdesk"
   phone: "(310) 609-1094"
   fax: "(310) 609-1075"
   address: "19067 S. Reyes Ave. Compton, CA 90221"
+  locationPic: "assets/images/location2.png"
 
 Gateway =
-  id: "gateway-1"
-  companyId: "gateway"
+  id: "transload-1"
+  bannerId: "transload"
   businessName: "Harbor Green Gateway Logistics"
   contactName: "Company Frontdesk"
-  email: "maxx@gatewaylogisticsllc.com"
+  # email: "maxx@gatewaylogisticsllc.com"
   phone: "310-736-0318"
-  address: "281 W 15TH ST - 283 W  15TH  ST, San Pedro, CA 90731"
+  address: "19100 S. Susana Rd. Compton, CA 90221"
+  locationPic: "assets/images/location.png"
 
-Riverstar =
-  id: "recycle-1"
-  companyId: "recycle"
+Warehouse =
+  id: "warehouse-1"
+  bannerId: "warehouse"
+  businessName: "Harbor Green Warehouse Services"
+  contactName: "Company Frontdesk"
+  # email: "maxx@gatewaylogisticsllc.com"
+  phone: "310-736-0318"
+  address: "19100 S. Susana Rd. Compton, CA 90221"
+  locationPic: "assets/images/location.png"
+
+
+Trade =
+  id: "trade-1"
+  bannerId: "trade"
   businessName: "Harbor Green Recycling"
   contactName: "Company Frontdesk"
   phone: "310-965-0928"
   fax: "310-965-9038"
-  address: "19530 S Alameda St. Compton, CA 90221"
-
-# Ameco =
-#   id: "ameco-1"
-#   companyId: "ameco"
-#   contactName: "Company Frontdesk"
-#   businessName: "Ameco"
-#   phone: "702-767-1707"
-#   fax: "702-974-0240"
-
-
-# ZhongHua = 
-#   id: "zhonghua-1"
-#   companyId: "zhonghua"
-#   contactName: "Company Frontdesk"
-#   phone: "626-839-3284" 
-#   fax: "626-839-5094"
-
-# Beckett = 
-#   id: "beckett-1"
-#   companyId: "beckett"
-#   contactName: "Company Frontdesk"
-#   phone: "513-737-0385" 
-#   fax: "513-737-0583"
-
-# Metal = 
-#   id: "metal-1"
-#   companyId: "metal"
-#   contactName: "Company Frontdesk"
-#   phone: "310-965-0928" 
-#   fax: "310-965-9038"
-
-# HNP = 
-#   id: "hnp-1"
-#   companyId: "hnp"
-#   contactName: "Company Frontdesk"
-#   phone: "510-862-8088" 
-#   fax: "318-321-1816"
-
-# JW = 
-#   id: "jw-1"
-#   companyId: "jw"
-#   contactName: "Company Frontdesk"
-#   phone: "909-393-2626" 
-#   fax: "909-393-3371"
-
-# LG = 
-#   id: "lg-1"
-#   companyId: "lg"
-#   contactName: "Company Frontdesk"
-#   phone: "909-702-6088" 
-#   fax: "951-601-9578"
-
-# Secure = 
-#   id: "secure-1"
-#   companyId: "secure"
-#   contactName: "Company Frontdesk"
-#   phone: "702-643-5718" 
-#   fax: "702-643-5720"
-
-# Viera = 
-#   id: "viera-1"
-#   companyId: "viera"
-#   contactName: "Company Frontdesk"
-#   phone: "602-206-5215" 
-#   fax: "602-206-5214"
+  address: "19100 S. Susana Rd. Compton, CA 90221"
+  locationPic: "assets/images/location.png"
 
 contacts = [
   Main,
   Grain,
   Gateway,
-  Riverstar
+  Warehouse,
+  Trade
 ]
 
 `export default contacts`

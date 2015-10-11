@@ -6,7 +6,8 @@ Banner = DS.Model.extend
   pic: DS.attr "string"
   exposition: DS.attr "string"
   siteLink: DS.attr "string"
-
+  address: DS.attr "string"
+  contacts: DS.hasMany "contact", async: true
 Banner.reopenClass FIXTURES: Banners
 
 `export default Banner`

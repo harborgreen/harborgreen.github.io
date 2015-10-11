@@ -6,6 +6,6 @@ CompaniesRoute = Ember.Route.extend
       outlet: "header"
     @_super arguments...
   model: ->
-    @store.find "company"
+    @store.find "banner"
 
 `export default CompaniesRoute`

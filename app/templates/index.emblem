@@ -5,7 +5,7 @@
         .col.s12.m6.l4
           .logo.z-depth-2
             img src="assets/images/just-logo.png"
-            h4.site-title harbor green group
+            h4.site-title harbor green
             h6.subtitle
               span.fa resources development holding. inc.
   .hide-on-small-and-down
@@ -18,19 +18,16 @@
           h3.slogan 
             span.underline A Greener Future is in Our Hands
           h5.catchphrase We are the industry leading diversified international investment management firm dedicated to environmental responsibility
-      
-      .row
-        each banners as |banner|
-          .col.l4.s12
-            md-card image=banner.pic title=banner.promoHeader titleClass="red-text darken-3"
-              md-card-content
-                span.exposition= banner.exposition
-              md-card-action
-                link-to "companies.company" banner.id
-                  span.fa discover more
-                if banner.siteLink
-                  a href=banner.siteLink target="blank"
-                    span.fa visit site
+  .circle
+    .container
+      material-cards-collection cards=banners as |banner|
+        material-card-link "companies.company" banner.id image=banner.pic
+          .power-card-link
+            .power-card-link-content
+              .power-card-title= banner.promoHeader
+              .power-card-subtitle= banner.exposition
+            a.power-card-link-icon href=banner.siteLink target="blank" click="'externalSite' banner.siteLink bubbles=false"
+              i.fa.fa-external-link.fa-2x
 
   .second-hero.hero
     .container
@@ -42,55 +39,30 @@
               i.fa.fa-angle-right
 
 #contact
-  .followup
-    .row.final
-      .col.l6.s12.details
-        h4.page-subtitle 
-          span.fa.underline Main Office Contact
-        dl.expositions
-          dt email
-          dd= mainContact.email
-          dt phone
-          dd= mainContact.phone
-          dt fax
-          dd= mainContact.fax
-          dt address
-          dd= mainContact.address
-
-      .col.l6.hidden-on-small-and-down.maps
-        img.hard-code-map src="assets/images/location.png"
-
-    .third-hero.hero
-      .container
-        .row
-          .col.s12.m6.l4.offset-m3.offset-l4
-            .center.z-depth-1.fyi-panel
-              h4.page-subtitle
-                span.fa.underline business with us!
-              h5.subsection-title get in touch
+  .container
+    .row
+      .col.s12
+        .center.z-depth-1.fyi-panel
+          h3.page-subtitle
+            span.underline get in touch
+  each contacts as |contact|
     .container
       .row
-        h1
-        each contacts as |contact|
-          .col.l6.m6.s12
-            .card-panel.card-large
-              h6.card-title.underline= contact.businessName
-              material-object-listify model=contact displayKeys=contactKeys iconMap=iconMap
+        .col.l6.m6.s12
+          .card-panel.card-large
+            h6.card-title.underline= contact.businessName
+            material-object-listify model=contact displayKeys=contactKeys iconMap=iconMap
+        .col.l6.m6.hidden-on-small-and-down.maps
+          img.hard-code-map src=contact.locationPic
+    
 
   .final-hero.hero
     .container
       .row
         .col.s12
           .center
+            h4.page-subtitle.white-text
+              span.fa.underline giving back to our world
             button.btn-large.red.darken-2 click="scrollBack"
               span.fa top&nbsp;
               i.fa.fa-angle-up
-
-if siteConFlag
-  md-modal close="closeModal"
-    .modal-content
-      h4 The Gateway Logistics site is under construction
-      p it is not available for viewing yet
-    .modal-footer
-      a.modal-action.modal-close.waves-effect.waves-orange.btn-flat.agree-button click="closeModal"
-        span.fa ok

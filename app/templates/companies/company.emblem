@@ -3,7 +3,7 @@
     .col.s12
       link-to "companies.index" class="btn-large waves-effect"
         i.fa.fa-angle-left
-        span.fa &nbsp;#{company.title}
+        span.fa &nbsp;#{company.promoHeader}
   .row
     .col.s12.m6.l6
       .chip

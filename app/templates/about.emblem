@@ -3,7 +3,7 @@
     .container
       .row
         .col.s12
-          .page-title about Harbor Green Group
+          .page-title about Harbor Green
   .about-content
     .container
       each model as |about|

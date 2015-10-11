@@ -2,7 +2,7 @@
 
 CompanyRoute = Ember.Route.extend
   model: ({id}) ->
-    @store.find "company", id
+    @store.find "banner", id
     .then (company) ->
       company.get("contacts")
       .then (contacts) ->
