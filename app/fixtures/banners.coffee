@@ -34,9 +34,15 @@ Trade =
   pic: "assets/images/occ2.jpg"
   promoHeader: "Recycling and Recollection"
   exposition: "Our recycling branch is responsible for keeping our ecosystem sustainable"
-  siteLink: "http://harborgreen.com"
-  address: "19100 S. Susana Rd. Compton, CA 90221"
-  contacts: ["trade-1"]
+  contacts: ["trade-1", "trade-2"]
+  pics: [
+    "assets/images/occ2.jpg",
+    "assets/images/occ.jpg",
+    "assets/images/a-busy-port.jpg",
+    "assets/images/paper.jpg",
+    "assets/images/lasvegas.jpg",
+    "assets/images/plastic.jpg"
+  ]
 banners = Ember.A [Grain, Gateway, Warehouse, Trade]
 
 `export default banners`

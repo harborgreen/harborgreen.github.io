@@ -11,6 +11,6 @@ CompanyController = Ember.Controller.extend
     fax: "fa fa-fax fa-lg"
     email: "fa fa-envelope-o fa-lg"
     address: "fa fa-map-marker fa-lg"
-    exposition: "fa fa-info-o fa-lg"
+    exposition: "fa fa-info-circle fa-lg"
 
 `export default CompanyController`

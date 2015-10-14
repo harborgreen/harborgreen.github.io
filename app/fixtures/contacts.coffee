@@ -41,23 +41,36 @@ Warehouse =
   address: "19100 S. Susana Rd. Compton, CA 90221"
   locationPic: "assets/images/location.png"
 
-
 Trade =
   id: "trade-1"
   bannerId: "trade"
-  businessName: "Harbor Green Recycling"
+  businessName: "Harbor Green Recycling Los Angeles"
   contactName: "Company Frontdesk"
   phone: "310-965-0928"
   fax: "310-965-9038"
   address: "19100 S. Susana Rd. Compton, CA 90221"
   locationPic: "assets/images/location.png"
+  exposition: "California branch recycling"
+
+Trade2 = 
+  id: "trade-2"
+  bannerId: "trade"
+  businessName: "Harbor Green Recycling Las Vegas"
+  siteLink: "http://harborgreen.com"
+  contactName: "Company Frontdesk"
+  phone: "(702) 643-6913"
+  fax: "(702) 643-6918"
+  address: "5375 East Cheyenne Avenue. Las Vegas, NV. 89156-3501"
+  locationPic: "assets/images/lv-location.png"
+  exposition: "Nevada branch recycling"
 
 contacts = [
   Main,
   Grain,
   Gateway,
   Warehouse,
-  Trade
+  Trade,
+  Trade2
 ]
 
 `export default contacts`
