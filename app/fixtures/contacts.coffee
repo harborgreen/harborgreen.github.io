@@ -20,6 +20,7 @@ Grain =
   fax: "(310) 609-1075"
   address: "2100 S Alameda St, Rancho Dominguez CA 90220"
   locationPic: "assets/images/location2.png"
+  exposition: "We are a well-established hay exporter in Long Beach area. We also provide transloading service for hay and grains."
 
 Gateway =
   id: "transload-1"
