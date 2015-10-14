@@ -1,6 +1,6 @@
 #contact {
   background: {
-    color: color("brown", "lighten-5");
+    color: color("brown", "lighten-4");
   }
   .image-padder {
     background: {
@@ -9,10 +9,7 @@
       position: center top;
     }
   }
-  .hard-code-map {
-    width: 100%;
-    height: 100%;
-  }
+  
   .third-hero {
     margin-top: 0;
   }
@@ -27,61 +24,16 @@
     font-size: 1.2rem;
   }
   .fyi-panel {
+    display: block;
     margin-top: 3rem;
     margin-bottom: 3rem;
     padding: 2rem;
     background-color: rgba(color("blue", "lighten-5"), 0.4);
   }
-  .map-canvas,
-  .details,
-  .maps {
-    @media #{$large-and-up} {
-      max-height: 550px;
-    }
-  }
-  .maps {
-    padding-top: 0.5rem;
-    height: 415px;
-  }
-  .maps.col {
-    padding-right: 0;
-  }
   .underline {
     padding-bottom: 1rem;
     border-bottom: 1px solid color("blue-grey", "darken-4");
   }
-  .details {
-    text-align: right;
-    @include display-flex;
-    @include flex-direction(column);
-    @include justify-content(center);
-  }
-  .expositions {
-    dt {
-      color: color("blue-grey", "darken-2");
-      text-transform: capitalize;
-      font-weight: bold;
-      font-size: 1.2rem;
-    }
-    dd {
-      color: color("blue-grey", "darken-3");
-      margin-bottom: 20px;
-      font-size: 1.5rem;
-    }
-  }
-  .card-title {
-    font-size: 1.4rem;
-    padding-bottom: 1rem;
-    margin-bottom: 1rem;
-  }
-  .card-large {
-    height: 405px;
-    background: {
-      image: url("images/small-logo.png");
-      size: 100px 75px;
-      position: right bottom;
-      repeat: no-repeat;
-    }
-  }
+  
   
 }

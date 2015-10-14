@@ -58,7 +58,7 @@
     "google-maps-markup": "1.15.2",
     "liquid-fire": "0.21.3",
     "rsvp": "^3.1.0",
-    "simwms-assets": "simwms/simwms-assets",
+    "simwms-assets": "git://github.com/simwms/simwms-assets.git#43ed7a200e41c431ea79dc31c8d88587e852aa52",
     "simwms-build": "simwms/simwms-build"
   },
   "dependencies": {

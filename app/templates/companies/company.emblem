@@ -1,23 +1,31 @@
-.container
-  .row
-    .col.s12
-      link-to "companies.index" class="btn-large waves-effect"
-        i.fa.fa-angle-left
-        span.fa &nbsp;#{company.promoHeader}
-  .row
-    .col.s12.m6.l6
-      .chip
-        img src=company.pic
-        span.fa= company.address
-    if company.siteLink
-      .col.s12.m6.l4
-        a.waves-effect.btn-flat href=company.siteLink target="blank"
-          span.fa Visit Company Site&nbsp;
-          i.fa.fa-external-link
+material-hero pics=company.pics
+  .page-title.yellow-text.lighten-2
+    span.z-depth-1.fyi-panel= company.promoHeader
 
-  .row
-    .col.s12
-      each contacts as |contact|
-        md-card title=contact.contactName
-          md-card-content
+.companies-content
+  .container
+    .row
+      .col.s12
+        link-to "companies.index" class="btn-large waves-effect"
+          i.fa.fa-angle-left
+          span.fa &nbsp;#{company.promoHeader}
+    .row
+      .col.s12.m6.l6
+        .chip
+          img src=company.pic
+          span.fa= company.address
+      if company.siteLink
+        .col.s12.m6.l4
+          a.waves-effect.btn-flat href=company.siteLink target="blank"
+            span.fa Visit Company Site&nbsp;
+            i.fa.fa-external-link
+
+    each contacts as |contact|
+      .row
+        .col.s12.m12 class=contact.locationPic:l6:l12
+          .card-panel.card-large
+            h6.card-title.underline= contact.businessName
             material-object-listify model=contact displayKeys=contactKeys iconMap=iconMap
+        if contact.locationPic
+          .col.l6.m12.hidden-on-small-and-down.maps
+            img.hard-code-map src=contact.locationPic

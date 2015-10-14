@@ -20,7 +20,7 @@
           h5.catchphrase We are the industry leading diversified international investment management firm dedicated to environmental responsibility
   .circle
     .container
-      material-cards-collection cards=banners as |banner|
+      material-cards-collection style="triforce" cards=banners as |banner|
         material-card-link "companies.company" banner.id image=banner.pic
           .power-card-link
             .power-card-link-content
@@ -29,32 +29,13 @@
             a.power-card-link-icon href=banner.siteLink target="blank" click="'externalSite' banner.siteLink bubbles=false"
               i.fa.fa-external-link.fa-2x
 
-  .second-hero.hero
-    .container
-      .row
-        .col.s12
-          .center
-            link-to "about" class="btn-large red darken-2"
-              span.fa about our company&nbsp;
-              i.fa.fa-angle-right
-
 #contact
   .container
     .row
       .col.s12
-        .center.z-depth-1.fyi-panel
+        link-to "companies" class="center z-depth-1 fyi-panel waves-effect"
           h3.page-subtitle
             span.underline get in touch
-  each contacts as |contact|
-    .container
-      .row
-        .col.l6.m6.s12
-          .card-panel.card-large
-            h6.card-title.underline= contact.businessName
-            material-object-listify model=contact displayKeys=contactKeys iconMap=iconMap
-        .col.l6.m6.hidden-on-small-and-down.maps
-          img.hard-code-map src=contact.locationPic
-    
 
   .final-hero.hero
     .container

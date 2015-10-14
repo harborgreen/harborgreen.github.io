@@ -12,6 +12,8 @@ Contact = DS.Model.extend
   businessName: DS.attr "string"
   address: DS.attr "string"
   locationPic: DS.attr "string"
+  exposition: DS.attr "string"
+  externalLink: DS.attr "string"
   banner: DS.belongsTo "banner", async: true
 
 Contact.reopenClass FIXTURES: Contacts

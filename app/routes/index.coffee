@@ -7,8 +7,6 @@ IndexRoute = Ember.Route.extend
     @_super arguments...
   model: ->
     Ember.RSVP.hash
-      banners: @store.find "banner"
-      main: @store.find("contact", "main")
-      contacts: @store.find("contact")
+      banners: @store.findByIds "banner", ["grain", "transload", "trade"]
 
 `export default IndexRoute`

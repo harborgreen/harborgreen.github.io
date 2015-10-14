@@ -3,7 +3,6 @@ a = Ember.computed.alias
 
 IndexController = Ember.Controller.extend
   banners: a "model.banners"
-  siteConFlag: false
   mainContact: a "model.main"
   contacts: a "model.contacts"
   lat: a "mainContact.lat"

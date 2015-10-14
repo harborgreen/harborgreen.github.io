@@ -7,7 +7,12 @@
       color: #fff;
     }
   }
-  .image-padder {
+  .hard-code-map {
+    width: 100%;
+    height: 100%;
+  }
+  .image-padder,
+  .material-hero {
     background: {
       image: url('images/city.jpg');
       size: cover;
@@ -27,5 +32,44 @@
   .companies-content {
     padding-top: 4rem;
     padding-bottom: 4rem;
+  }
+  .material-hero-content {
+    @include display-flex;
+    @include align-items(flex-end);
+  }
+  .fyi-panel {
+    padding: 1rem;
+    background-color: rgba(#000, 0.3);
+  }
+  .card-title {
+    font-size: 1.4rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+  }
+  .card-large {
+    height: 405px;
+    background: {
+      image: url("images/small-logo.png");
+      size: 100px 75px;
+      position: right bottom;
+      repeat: no-repeat;
+    }
+  }
+  .map-canvas,
+  .maps {
+    @media #{$large-and-up} {
+      max-height: 550px;
+    }
+  }
+  .maps {
+    padding-top: 0.5rem;
+    height: 415px;
+  }
+  .maps.col {
+    padding-right: 0;
+  }
+  .underline {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid color("blue-grey", "darken-4");
   }
 }

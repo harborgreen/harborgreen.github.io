@@ -1,6 +1,12 @@
-.container
-  .row
-    material-tiles-collection tiles=model as |tile|
-      material-tile-link "companies.company" tile.id background=tile.pic
-        .tile-title= tile.promoHeader
-        .tile-subtitle= tile.address
+.image-padder
+  .container
+    .row
+      .col.s12
+        .page-title.yellow-text.lighten-2 Company Service Details
+.companies-content
+  .container
+    .row
+      material-tiles-collection tiles=model as |tile|
+        material-tile-link "companies.company" tile.id background=tile.pic
+          .tile-title= tile.promoHeader
+          .tile-subtitle= tile.address

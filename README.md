@@ -1,5 +1,56 @@
 # Harbor
 
+### index
+
+done - grain and grass -> grain and alfa-alfa
+
+done - transloding logistics services -> just logistics services
+
+done - remove warehouse storage services card
+
+done - remote about our company link
+
+done - move contact information to just the company show page
+
+### http://www.harborgreengroup.com/companies/trade
+
+Harbor Green LV website tab -> to remote site
+
+Harbor Green Los Angeles tab -> to local site
+
+### http://www.harborgreengroup.com/companies/transload
+
+let colors matching harbor green colors
+
+clouds -> pics to warehouse / dogs
+
+Company Frontdesk 
+
+Warehouse, Transload, Storage services explanation tab
+
+Trucking services tab, which goes to gateway website
+
+phome ->
+310 965 0928
+
+fax ->
+424 213 4998
+
+remove gateway site link to harborgreendevelopment.com
+
+write some more exposition on services offer
+
+### http://www.harborgreengroup.com/companies/grain
+
+done - clouds -> pictures of alfa alfa
+
+done - address -> 2100 s alameda st, rancho domingeuz 90221
+
+
+### http://www.gatewaylogisticsllc.com/
+
+instead of "by harbor green group" -> "a harbor group company"
+
 This README outlines the details of collaborating on this Ember application.
 A short introduction of this app could easily go here.
 

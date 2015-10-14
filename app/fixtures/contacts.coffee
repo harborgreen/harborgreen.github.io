@@ -18,7 +18,7 @@ Grain =
   contactName: "Company Frontdesk"
   phone: "(310) 609-1094"
   fax: "(310) 609-1075"
-  address: "19067 S. Reyes Ave. Compton, CA 90221"
+  address: "2100 S Alameda St, Rancho Dominguez CA 90220"
   locationPic: "assets/images/location2.png"
 
 Gateway =
