@@ -19,4 +19,5 @@ footer.page-footer
             span.link-title recycle and recollection
   md-copyright text="Harbor Green Group" startYear=2006
     a.right.grey-text.lighten-2 href="https://foxnewsnetwork.github.io" target="blank"
-      span.fa built by Thomas Chen
+      span.fa built by&nbsp;
+      span.fa.green-text Thomas Chen
