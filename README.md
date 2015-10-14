@@ -20,25 +20,23 @@
 
 ### http://www.harborgreengroup.com/companies/transload
 
-  let colors matching harbor green colors
+  done - let colors matching harbor green colors
 
-  clouds -> pics to warehouse / dogs
+  done - clouds -> pics to warehouse / dogs
 
-  Company Frontdesk 
+  done - Company Frontdesk 
 
-  Warehouse, Transload, Storage services explanation tab
+  done - Warehouse, Transload, Storage services explanation tab
 
-  Trucking services tab, which goes to gateway website
+  done - Trucking services tab, which goes to gateway website
 
-  phome ->
-  310 965 0928
+  done - phome -> 310 965 0928
 
-  fax ->
-  424 213 4998
+  done - fax -> 424 213 4998
 
-  remove gateway site link to harborgreendevelopment.com
+  done - remove gateway site link to harborgreendevelopment.com
 
-  write some more exposition on services offer
+  done - write some more exposition on services offer
 
 ### http://www.harborgreengroup.com/companies/grain
 

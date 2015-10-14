@@ -16,19 +16,18 @@ Grain =
 Gateway =
   id: "transload"
   pic: "assets/images/front1.jpg"
-  promoHeader: "Logistics Service"
+  promoHeader: "Logistics and Warehouse Service"
   exposition: "Convenient transloading and logistics service to help companies globalize"
-  siteLink: "http://www.gatewaylogisticsllc.com"
   address: "19100 S. Susana Rd. Compton, CA 90221"
-  contacts: ["transload-1"]
-Warehouse =
-  id: "warehouse"
-  pic: "assets/images/warehouse.jpg"
-  promoHeader: "Warehouse Storage Service"
-  exposition: "We provide long and short term storage service for import and export companies"
-  siteLink: "http://www.gatewaylogisticsllc.com"
-  address: "19100 S. Susana Rd. Compton, CA 90221"
-  contacts: ["warehouse-1"]
+  contacts: ["transload-2", "transload-1"]
+  pics: [
+    "assets/images/warehouse.jpg",
+    "assets/images/truck.jpg",
+    "assets/images/shipping.jpg",
+    "assets/images/container.jpg",
+    "assets/images/load.jpg"
+  ]
+
 Trade = 
   id: "trade"
   pic: "assets/images/occ2.jpg"
@@ -43,6 +42,6 @@ Trade =
     "assets/images/lasvegas.jpg",
     "assets/images/plastic.jpg"
   ]
-banners = Ember.A [Grain, Gateway, Warehouse, Trade]
+banners = Ember.A [Grain, Gateway, Trade]
 
 `export default banners`

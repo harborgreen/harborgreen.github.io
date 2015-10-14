@@ -9,4 +9,4 @@
       material-tiles-collection tiles=model as |tile|
         material-tile-link "companies.company" tile.id background=tile.pic
           .tile-title= tile.promoHeader
-          .tile-subtitle= tile.address
+          .tile-subtitle= tile.exposition

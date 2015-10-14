@@ -11,20 +11,26 @@
     width: 100%;
     height: 100%;
   }
+  .image-padder {
+    background-image: url('images/hand.png');
+    size: 450px;
+  }
   .image-padder,
   .material-hero {
     background: {
-      image: url('images/city.jpg');
       size: cover;
-      position: center top;
+      position: center center;
     }
+  }
+  .material-hero {
+    background-image: url('images/hand.png');
   }
   .companies-second-hero {
     @include display-flex;
     @include align-items(center);
     height: 350px;
     background: {
-      image: url('images/city.jpg');
+      image: url('images/earth.png');
       size: cover;
       position: center bottom;
     } 

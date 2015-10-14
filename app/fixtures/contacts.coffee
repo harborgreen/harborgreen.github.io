@@ -24,22 +24,24 @@ Grain =
 Gateway =
   id: "transload-1"
   bannerId: "transload"
-  businessName: "Harbor Green Gateway Logistics"
+  businessName: "Gateway Logistics - a Harbor Green Company"
   contactName: "Company Frontdesk"
-  # email: "maxx@gatewaylogisticsllc.com"
   phone: "310-736-0318"
   address: "19100 S. Susana Rd. Compton, CA 90221"
   locationPic: "assets/images/location.png"
+  siteLink: "http://www.gatewaylogisticsllc.com"
+  exposition: "Our trucking service branch"
 
 Warehouse =
-  id: "warehouse-1"
-  bannerId: "warehouse"
-  businessName: "Harbor Green Warehouse Services"
+  id: "transload-2"
+  bannerId: "transload"
+  businessName: "Harbor Green Development"
   contactName: "Company Frontdesk"
-  # email: "maxx@gatewaylogisticsllc.com"
-  phone: "310-736-0318"
+  phone: "310 965 0928"
+  fax: "424 213 4998"
   address: "19100 S. Susana Rd. Compton, CA 90221"
   locationPic: "assets/images/location.png"
+  exposition: "We provide long and short term storage service for import and export companies"
 
 Trade =
   id: "trade-1"
