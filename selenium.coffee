@@ -6,7 +6,6 @@ Paths = [
   "companies/",
   "companies/grain",
   "companies/transload",
-  "companies/warehouse",
   "companies/trade"
 ]
 
