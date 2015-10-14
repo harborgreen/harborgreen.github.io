@@ -20,7 +20,7 @@
           h5.catchphrase We are the industry leading diversified international investment management firm dedicated to environmental responsibility
   .circle
     .container
-      material-cards-collection style="triforce" cards=banners as |banner|
+      material-cards-collection cards=banners as |banner|
         material-card-link "companies.company" banner.id image=banner.pic
           .power-card-link
             .power-card-link-content
@@ -30,13 +30,6 @@
               i.fa.fa-external-link.fa-2x
 
 #contact
-  .container
-    .row
-      .col.s12
-        link-to "companies" class="center z-depth-1 fyi-panel waves-effect"
-          h3.page-subtitle
-            span.underline get in touch
-
   .final-hero.hero
     .container
       .row

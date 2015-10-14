@@ -9,6 +9,12 @@ md-navbar name=name class=navClass
   link-to "about" tagName="li"
     link-to "about"
       span.link-title about us
-  link-to "companies" tagName="li"
-    link-to "companies"
-      span.link-title our services
+  link-to "companies.company" "grain" tagName="li"
+    link-to "companies.company" "grain"
+      span.link-title grains
+  link-to "companies.company" "transload" tagName="li"
+    link-to "companies.company" "transload"
+      span.link-title logistics
+  link-to "companies.company" "trade" tagName="li"
+    link-to "companies.company" "trade"
+      span.link-title recycle

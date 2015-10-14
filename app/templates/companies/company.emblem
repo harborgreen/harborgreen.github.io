@@ -6,7 +6,7 @@ material-hero pics=company.pics
   .container
     .row
       .col.s12
-        link-to "companies.index" class="btn-large waves-effect"
+        link-to "index" class="btn-large waves-effect"
           i.fa.fa-angle-left
           span.fa &nbsp;#{company.promoHeader}
     .row

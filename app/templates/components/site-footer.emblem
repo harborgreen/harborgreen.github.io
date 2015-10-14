@@ -11,8 +11,12 @@ footer.page-footer
             span.link-title home
           li: link-to "about"
             span.link-title about our group
-          li: link-to "companies"
-            span.link-title our services
+          li: link-to "companies.company" "grain"
+            span.link-title grain and alfalfa
+          li: link-to "companies.company" "transload"
+            span.link-title transload and logistics
+          li: link-to "companies.company" "trade"
+            span.link-title recycle and recollection
   md-copyright text="Harbor Green Group" startYear=2006
     a.right.grey-text.lighten-2 href="https://foxnewsnetwork.github.io" target="blank"
       span.fa built by Thomas Chen

@@ -13,11 +13,14 @@
   .third-hero {
     margin-top: 0;
   }
+  .page-title {
+    text-align: center;
+  }
   .page-subtitle {
     color: color("green", "darken-4");
     text-transform: capitalize;
     font-size: 1.55rem;
-    font-family: 'Poiret One', cursive;
+    text-align: center;
   }
   .subsection-title {
     color: color("blue-grey", "darken-1"); 

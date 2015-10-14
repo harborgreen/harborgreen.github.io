@@ -42,6 +42,6 @@ Trade =
     "assets/images/lasvegas.jpg",
     "assets/images/plastic.jpg"
   ]
-banners = Ember.A [Grain, Gateway, Trade]
+banners = Ember.A [Grain, Trade, Gateway]
 
 `export default banners`

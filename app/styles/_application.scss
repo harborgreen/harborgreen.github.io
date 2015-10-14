@@ -19,6 +19,7 @@ main {
   @include display-flex;
   @include flex-direction(column);
   @include justify-content(space-between);
+  background-color: color("brown", "lighten-4");
 }
 
 .image-padder {
