@@ -1,6 +1,6 @@
 {
   "name": "harbor",
-  "version": "0.1.15",
+  "version": "0.1.16",
   "description": "front end of harbor group webpage",
   "private": true,
   "directories": {
